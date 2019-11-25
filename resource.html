@@ -16,6 +16,7 @@
 
 <style>
   h1 {
+    margin-bottom: 15px;
     text-align: center;
     background-color: rgb(61, 79, 105);
     color: white;
@@ -46,10 +47,8 @@
     </nav>
 </br>
 </br>
-</br>
-</br>
-<div class="container">
-  <h1>RESOURCES</h1>
+<h1>RESOURCES</h1>
+  <div class="container">
     <div class="row">
         <div class="col-md-12">
           <h2><u><center>Data Source</center></u></h2>
@@ -58,25 +57,30 @@
           <ul>  
           <li><p>Once we extracted our data, we used PostgreSQL to filter our data.</p></li>
           </ul>
-          <center><img src="#"></center>
+          <img src="sql.PNG" height="270" width="875">
           <ul>
-            <li><p>We wanted to showcase any data starting in the 2000s and to present.</p></li>
+            <li><p>We studied some of the temperatures that were dated back as early as the 2000s.</p></li>
           </ul>
           <center><a href="2000s_data.txt" target="_blank" button type="button" class="btn btn-secondary btn-sm">2000s Charlotte Weather Data</button></a></center>
         </br>
       </br>
-    </br>
-  </br>
-</br> 
         </div>
       </div>
           <div class="row">
             <div class="col-md-12">
             <h2><u><center>Scoring Data</center></u></h2>
+            <p>Any average temperatures between 70 degrees t0 80 degrees without rain and snow is ideal to host an outside event. We used Python to score our average temperatures. A score of 1 = Bad Day and a score of 2 = Good Day.</p>
+            <img src="gradient.png" height="335" width="1000">
+            <p>As a result, when the machine learning part ran, it correctly picked a good day 86% of the time and correctly picked a bad day 44% of the time.</p>
+            <center><img src="machine_learning_results.png" height="225" width="850"></center>
           </div>
         </div>
        </div> 
     </div>
 </div>
+</br>
+</br>
+</br>
+</br>
 </body>
 </html>
